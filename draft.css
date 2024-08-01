@@ -33,7 +33,7 @@ body {
     cursor: url("Images/cursor.png") 16 16, auto;
     transition: cursor 0.3s ease-in-out; 
     overflow-x: hidden;
-    max-width: 1400px;
+    max-width: 2400px;
 }
 
 body a, .btn-primary, .btn-secondry {
