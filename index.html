@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--Meta tags-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="portfolio, errfanium">
+        <meta name="description" content="A page for Erfan Farahani portfolio">
+        <meta name="robots" content="index, follow"> 
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <!--OG tags-->
+        <meta property="og:title" content="Erfan Farahani - Portfolio">
+        <meta property="og:description" content="Showcase of my work as a UX Designer/Developer.">
+        <meta property="og:image" content="https://drive.google.com/file/d/1udLmFnCx7xKhJ11FWEd9O3c3zJFBHu41/view?usp=drive_link">
+        <meta property="og:url" content="https://erfanfarahani.com">
+        <meta property="og:type" content="website">
+
+        <!--Links-->
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="draft.css"> 
+        <link rel="stylesheet" href="draft-1100.css" media="(max-width: 1100px)">
+        <link rel="stylesheet" href="draft-800.css" media="(max-width: 800px)">
+        <link rel="stylesheet" href="draft-576.css" media="(max-width: 576px)">
+        <link rel="stylesheet" href="https://use.typekit.net/oph5gup.css">
+        <script src="https://kit.fontawesome.com/b5c3b41031.js" crossorigin="anonymous"></script>
+        <link rel="preload" href="Images/cursor.png" as="image">
+        <link rel="preload" href="Images/cursor2.png" as="image">
+        <link rel="preload" href="Images/giphy.webp" as="image">
+
+        <!--Title-->
+        <title>Erfan Experience</title>
+        
+</head>
+<script>
+document.addEventListener('click', function(event) {
+    const navMenu = document.querySelector('.hero-section-header-nav');
+    const toggleBar = document.querySelector('.toogle-bar');
+    const checkbox = document.getElementById('toogle-bar');
+    
+    // Check if the clicked element is inside the nav menu or the toggle bar
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickOnToggleBar = toggleBar.contains(event.target);
+    
+    // If the click is outside the menu and toggle bar, uncheck the checkbox to close the menu
+    if (!isClickInsideMenu && !isClickOnToggleBar) {
+        checkbox.checked = false;
+    }
+});
+</script>
+
+<body>
+    <!-- Section 1 Hero -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-container1">
+                <div class="row-hero">
+                    <header class="hero-section-header">
+                        <div class="row">
+                            <div class="hero-section-header-logo">
+                                <img src="Images/5.png" alt="logo" id="header-logo-img">
+                            </div>
+                            <nav class="hero-section-header-nav">
+                                <input type="checkbox" id="toogle-bar">
+                                <label for="toogle-bar" class="toogle-bar">
+                                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                                </label>
+                                <div class="row">
+                                    <a href="about.html">About</a>
+                                    <a href="#exploration-section-title">Designs</a>
+                                    <a href="contact.html">Contact</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </header>
+                    <div class="hero-section-content">
+                        <div class="row" id="hero-title">
+                            <span class="gif-text" id="gif-text-screen"><h1>Design To <span class="break">Feel Better</span></h1></span>
+                            <span class="gif-text" id="gif-text-mobile"><h1>Design To Feel Better</h1></span>
+                            <h3>Hello and welcome to my world! <br>
+                            I'm Erfan, and I love to Design, Code,
+                            and Cook — all to create a happier me.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container2">
+                <div class="hero-section-footer">
+                    <div class="row">
+                        <div class="hero-section-footer-socials">
+                            <a href="https://www.linkedin.com/in/erfanfarahani/" target="_blank"> <img src="Images/linkedin.png" alt="linkedin-logo"> </a>
+                            <a href="https://dribbble.com/erfanexperience" target="_blank"> <img src="Images/dribbble.png" alt="Dribbble-logo"> </a>
+                            <a href="https://www.behance.net/erfanexperience" target="_blank"> <img src="Images/behance.png" alt="behance.logo"></a>
+                            <a href="https://github.com/erfanexperience" target="_blank"><img src="Images/github.png" alt="github-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Section 2 Design and Coding Exploration Title -->
+    <section class="exploration-section" id="exploration-section-title">
+    <div class="exploration-container">
+            <h2>Design and Coding</h2>
+            <h4>Exploration</h4>
+    </div>
+    </section>
+
+    <!-- Section 2 Design and Coding Exploration --> 
+    <!-- Portfolio Coding -->
+    <section class="container" id="section-portfolio">
+        <div class="main-content">
+            <div class="main-content-info">
+                <h4>Erfan Experience</h4>
+                <p>
+                    The website you are browsing is my portfolio, 
+                    which I developed using <b>HTML</b> and <b>CSS</b>. 
+                    The initial design was crafted in Figma, 
+                    and then brought to life through 
+                    lines of code that I wrote with love. 
+                    I have tried to create a clean, simple design 
+                    that effectively showcases my work while 
+                    incorporating engaging elements.</p>
+                <div class="btns">
+                    <a class="btn-primary" href="https://www.behance.net/gallery/197248591/Gelato-House-Project" target="_blank">View Design Process</a>
+                    <a class="btn-primary-2" href="https://dribbble.com/shots/24077394-Gelato-House">View Design Shots</a>
+                </div>
+    
+            </div>
+            <div class="main-content-media">
+                <img src="Images/Erfan Experience.png" alt="Erfan Exoerience Project" id="portfolio-img">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 2 Design and Coding Exploration --> 
+    <!-- Gelato House -->
+    <section class="container" id="section-gelato">
+    <div class="main-content">
+        <div class="main-content-media">
+            <img src="Images/Gelato.png" alt="Gelato House Project" id="gelato-img">
+        </div>
+        <div class="main-content-info">
+            <h4>Gelato House Ltd</h4>
+            <p>During this four-month project, 
+                I designed Gelato House Franchise Ltd's 
+                ice cream ordering app, giving users
+                 a fun four-step flow to create and order 
+                 their customized ice cream. I conducted 
+                 landscape analysis and user research to 
+                 know what features align with users' needs. 
+                I worked with Figma, Adobe Illustrator, 
+                and Photoshop to build the prototype and 
+                final designs.</p>
+            <div class="btns">
+                <a class="btn-primary" href="https://www.behance.net/gallery/197248591/Gelato-House-Project" target="_blank">View Design Process</a>
+                <a class="btn-primary-2" href="https://dribbble.com/shots/24077394-Gelato-House">View Design Shots</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Section 2 Design and Coding Exploration --> 
+    <!-- Flystein -->
+    <section class="container" id="section-flystein">
+        <div class="main-content">
+            <div class="main-content-info">
+                <h4>Flystein Portal</h4>
+                <p>UX design taught me how to improve every product
+                     I use. Working with the Flystein website sparked
+                      the idea that what I see has the potential to
+                       be better. By using competitor research and 
+                       reviewing published articles about user trends
+                        in the travel industry, I tried to design a 
+                        better version of Flystein's landing page.</p>
+                <div class="btns">
+                <a class="btn-primary" href="https://www.behance.net/gallery/197248591/Gelato-House-Project" target="_blank">View Design Process</a>
+                <a class="btn-primary-2" href="https://dribbble.com/shots/24077394-Gelato-House">View Design Shots</a>
+                </div>
+            </div>
+
+            <div class="main-content-media">
+                <img src="Images/Flystein2.png" alt="Flystein Project" id="flystein-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 Exploration-mobile --> 
+    <section class="container-mobile" id="exploration-mobile">
+        <!-- 11 -->
+        <div class="main-content-mobile">
+            <div class="main-content-mobile-media">
+                <img src="Images/Erfan Experience.png" alt="Erfan Exoerience Project" id="portfolio-img">
+            </div>
+            <div class="main-content-mobile-info">
+                <h4>Erfan Experience</h4>
+                <p>
+                    The website you are browsing is my portfolio, 
+                    which I developed using <b>HTML</b> and <b>CSS</b>. 
+                    The initial design was crafted in Figma, 
+                    and then brought to life through 
+                    lines of code that I wrote with love. 
+                    I have tried to create a clean, simple design 
+                    that effectively showcases my work while 
+                    incorporating engaging elements.
+                </p>
+                <div class="btns">
+                    <a class="btn-primary-mobile" href="https://www.behance.net/gallery/197248591/Gelato-House-Project" target="_blank">View Design Process</a>
+                    <a class="btn-primary-2-mobile" href="https://dribbble.com/shots/24077394-Gelato-House">View Design Shots</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="main-content-mobile">
+            <div class="main-content-mobile-media">
+                <img src="Images/Gelato.png" alt="Gelato House Project" id="gelato-img">
+            </div>
+            <div class="main-content-mobile-info">
+                <h4>Gelato House Ltd</h4>
+                <p>
+                    During this four-month project, 
+                I designed Gelato House Franchise Ltd's 
+                ice cream ordering app, giving users
+                 a fun four-step flow to create and order 
+                 their customized ice cream. I conducted 
+                 landscape analysis and user research to 
+                 know what features align with users' needs. 
+                I worked with Figma, Adobe Illustrator, 
+                and Photoshop to build the prototype and 
+                final designs.
+                </p>
+                <div class="btns">
+                <a class="btn-primary-mobile" href="https://www.behance.net/gallery/197248591/Gelato-House-Project" target="_blank">View Design Process</a>
+                <a class="btn-primary-2-mobile" href="https://dribbble.com/shots/24077394-Gelato-House">View Design Shots</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13 -->
+
+        <div class="main-content-mobile">
+            <div class="main-content-mobile-media">
+                <img src="Images/Flystein.png" alt="Flystein Project" id="flystein-img">
+            </div>
+            <div class="main-content-mobile-info">
+                <h4>Flystein Portal</h4>
+                <p>
+                    UX design taught me how to improve every product
+                    I use. Working with the Flystein website sparked
+                     the idea that what I see has the potential to
+                      be better. By using competitor research and 
+                      reviewing published articles about user trends
+                       in the travel industry, I tried to design a 
+                       better version of Flystein's landing page.
+                </p>
+                <div class="btns">
+                    <a class="btn-primary-mobile" href="https://www.behance.net/gallery/197248591/Gelato-House-Project" target="_blank">View Design Process</a>
+                    <a class="btn-primary-2-mobile" href="https://dribbble.com/shots/24077394-Gelato-House">View Design Shots</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Section 3 UI design Title -->
+    <section class="exploration-section" id="ui-design-title">
+    <div class="exploration-container">
+            <h2>Interface Design Gallery</h2>
+            <p id="ui-title-p">Here are some UI design samples 
+                I've created over the past 
+                few months as part of my journey 
+                to learn more about this world. 
+                The main tools I used for these 
+                projects were Figma, Adobe XD, 
+                and Photoshop, with some assistance 
+                from Illustrator for graphic design.</p>
+        </div>
+        </section>
+
+
+    <!-- Section 3 UI design -->
+    <section class="ui-designs-container" id="ui-design">
+        <div class="ui-designs-item" id="ui-1">
+            <a href="https://dribbble.com/shots/23709207-The-Home-Mastero" target="_blank">
+            <img src="Images/Smart.png" alt="Home Mastero Project"></a>
+        </div>
+        <div class="ui-designs-content" id="ui-content-1"> 
+            <h4>Home Maestro</h4>
+            <p>
+                Designing Home Maestro was my attempt to
+                 build a complete application in a new 
+                 morphism style. Here, I developed my 
+                 iconography skills and tried to use them
+                 in my design. Also, with a quick benchmarking 
+                 study, I found some holes in the market so that
+                  I could design not only a comparable but also a better app. </p>
+        </div>
+
+        <div class="ui-designs-item" id="ui-2">
+            <a href="#"><img src="Images/Hop.gif" alt="Hop Project"></a>
+        </div>
+        <div class="ui-designs-content" id="ui-content-2"> 
+            <h4>HOP</h4>
+            <p>
+                Designing HOP was my first experience creating
+                 a ride-hailing app. After conducting a small 
+                 user research study for this concept, I realized 
+                 that delivery requests via scooters through applications
+                like these are both possible and in demand, so I included 
+                this idea in my design. </p>
+        </div>
+
+        <div class="ui-designs-item" id="ui-3">
+            <a href="https://dribbble.com/shots/23910406-Case-of-Olivia-Jones" target="_blank"><img src="Images/Jones.gif" alt="Jones Project"></a>
+        </div>
+        <div class="ui-designs-content" id="ui-content-3"> 
+            <h4>Olivia Jones</h4>
+            <p>
+                Designing a biography webpage was my first time doing so.
+                 Olivia Jones was the recipient of it. I tried to use phrases
+                  and images that really show her professional journey. The goal 
+                  was to give visitors a clear sense of her professional journey. 
+                  Don't forget to look at the spectators with more details; they 
+                  are taking pictures.  </p>
+        </div>
+
+        <div class="ui-designs-item" id="ui-4">
+            <a href="https://dribbble.com/shots/23768247-Beck-Construction" target="_blank">
+            <img src="Images/Construction.gif" alt="Beck Construction Project"></a>
+        </div>
+        <div class="ui-designs-content" id="ui-content-4"> 
+            <h4>Beck Construction</h4>
+            <p>
+                For this project, I created a visually striking
+                landing page for Beck Construction. The website
+                includes Illustrator-designed graphics and Figma animations. 
+                I intended to create this website to ensure viewers understand 
+                the company's message and be motivated to take the desired action. </p>
+        </div>
+    </section>
+
+    <section class="container-mobile" id="ui-design-mobile">
+        <!-- 21 -->
+        <div class="main-content-mobile">
+            <div class="main-content-mobile-media">
+                <img src="Images/Construction.gif" alt="Beck Construction Project">
+            </div>
+            <div class="main-content-mobile-info">
+                <h4>Beck Construction</h4>
+                <p>
+                    For this project, I created a visually striking
+                    landing page for Beck Construction. The website
+                    includes Illustrator-designed graphics and Figma animations. 
+                    I intended to create this website to ensure viewers understand 
+                    the company's message and be motivated to take the desired action. 
+                </p>
+                <div class="btns">
+                    <a class="btn-primary-mobile" href="https://dribbble.com/shots/23768247-Beck-Construction" target="_blank">View Design Shots</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- 22 -->
+        <div class="main-content-mobile">
+            <div class="main-content-mobile-media">
+                <img src="Images/Jones.gif" alt="Jones Project">
+            </div>
+            <div class="main-content-mobile-info">
+                <h4>Olivia Jones</h4>
+                <p>
+                    Designing a biography webpage was my first time doing so.
+                    Olivia Jones was the recipient of it. I tried to use phrases
+                  and images that really show her professional journey. The goal 
+                  was to give visitors a clear sense of her professional journey. 
+                  Don't forget to look at the spectators with more details; they 
+                  are taking pictures. 
+                </p>
+                <div class="btns">
+                    <a class="btn-primary-mobile" href="https://dribbble.com/shots/23910406-Case-of-Olivia-Jones" target="_blank">View Design Shots</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 23 -->
+        <div class="main-content-mobile">
+            <div class="main-content-mobile-media">
+                <img src="Images/Hop.gif" alt="Hop Project">
+            </div>
+            <div class="main-content-mobile-info">
+                <h4>Hop</h4>
+                <p>
+                Designing HOP was my first experience creating
+                 a ride-hailing app. After conducting a small 
+                 user research study for this concept, I realized 
+                 that delivery requests via scooters through applications
+                 like these are both possible and in demand, so I included 
+                 this idea in my design.
+                </p>
+                <div class="btns">
+                    <a class="btn-primary-mobile" href="https://dribbble.com/erfanexperience" target="_blank">View Design Shots</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 24 -->
+        <div class="main-content-mobile">
+            <div class="main-content-mobile-media">
+                <img src="Images/Smart.png" alt="Home Mastero Project"></a>
+            </div>
+            <div class="main-content-mobile-info">
+                <h4>Home Maestro</h4>
+                <p>
+                    esigning Home Maestro was my attempt to
+                     build a complete application in a new 
+                     morphism style. Here, I developed my 
+                     iconography skills and tried to use them
+                     in my design. Also, with a quick benchmarking 
+                     study, I found some holes in the market so that
+                      I could design not only a comparable but also a better app.
+                </p>
+                <div class="btns">
+                    <a class="btn-primary-mobile" href="https://dribbble.com/shots/23709207-The-Home-Mastero" target="_blank">View Design Shots</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+        <!-- Section 4 Contact -->
+    <footer class="contact-section">
+        <div class="contact-section-title">
+            <h2>Love to Here <br> From You</h2>
+        </div>
+        <div class="cotntact-section-info">
+            <a href="mailto:erfan.experience@gmail.com" target="_blank">
+                <img src="Images/64/email-13-64.png" width="28" height="28" alt="email">
+                <p>Drop Me an Email</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/erfanfarahani/" target="_blank">
+                <img src="Images/64/linkedin-3-64.png" width="28" height="28" alt="linkedin">
+                <p>Contact Me On Linkedin</p>
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
