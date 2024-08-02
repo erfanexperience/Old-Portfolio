@@ -11,7 +11,8 @@
 
 
 :root {
-  --h1Font: "acier-bat-solid", sans-serif;
+  --h1Font: -apple-system,  
+                BlinkMacSystemFont, sans-serif; 
   --h1Size: 6vw;
   --h2Font: "acier-bat-solid", sans-serif;
   --h2Size: 3.1rem;
