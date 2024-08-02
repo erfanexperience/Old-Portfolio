@@ -46,6 +46,15 @@ document.addEventListener('click', function(event) {
         checkbox.checked = false;
     }
 });
+
+function preloadHeroImage() {
+    const heroImage = new Image();
+    heroImage.src = 'Images/Erfan-cloud3.png'; // Path to the hero image
+}
+
+// Call the preload function on page load
+window.addEventListener('load', preloadHeroImage);
+        
 </script>
 
 <body>
