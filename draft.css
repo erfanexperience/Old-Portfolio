@@ -294,7 +294,7 @@ p {
     font-variant: small-caps;
     transition: all 0.5s ease-in-out, color 0.5s ease-in-out;
     display: inline-block;
-    background: url(Images/gif-2.gif);
+    background: url(Images/gif-3.gif);
     -webkit-background-clip: text;
     background-clip: text;
     color: white;
@@ -302,7 +302,7 @@ p {
 }
 
 .hero-section:hover .gif-text {
-    background: url(Images/gif-2.gif) !important;
+    background: url(Images/gif-3.gif) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     color: transparent !important;
