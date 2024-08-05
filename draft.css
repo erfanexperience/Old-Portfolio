@@ -171,6 +171,7 @@ p {
     left: 12%;
     transform: translateX(-12%);
     transition: all 2s ease-in-out;
+    transition-delay: 0.3s;
 }
 
 #hang2 {
@@ -181,6 +182,7 @@ p {
     left: 88%;
     transform: translateX(-88%);
     transition: all 2s ease-in-out;
+    transition-delay: 0.3s;
 }
 
 .hero-section:hover #hang1 {
