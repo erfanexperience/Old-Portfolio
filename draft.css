@@ -167,22 +167,22 @@ p {
     width: auto;
     height: 25vw;
     position: absolute;
-    top: -25vw;
+    top: -35vw;
     left: 12%;
     transform: translateX(-12%);
     transition: all 2s ease-in-out;
-    transition-delay: 0.3s;
+    transition-delay: 0.35s;
 }
 
 #hang2 {
     width: auto;
     height: 35vw;
     position: absolute;
-    top: -35vw;
+    top: -45vw;
     left: 88%;
     transform: translateX(-88%);
     transition: all 2s ease-in-out;
-    transition-delay: 0.3s;
+    transition-delay: 0.35s;
 }
 
 .hero-section:hover #hang1 {
