@@ -149,7 +149,13 @@ p {
     border-radius: 64px;
 }
 
+#header-logo-img {
+    transition: all 0.4s ease-in-out;
+}
 
+#header-logo-img:hover {
+    transform: scale(1.2);
+}
 
 #hero-title {
     padding-top: 2vh;
