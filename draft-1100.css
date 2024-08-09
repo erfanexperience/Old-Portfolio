@@ -39,6 +39,15 @@
     }
 
 
+        .gif-text {
+        background: none;
+    }
+    
+    .hero-section:hover .gif-text {
+        background: none;
+    }
+
+
 
 
 
