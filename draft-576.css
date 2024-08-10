@@ -6,14 +6,10 @@
     --pSize: 1.1rem;
 }
 
-html {
-    height: -webkit-fill-available;
-}
 
 .hero-section {
     height: 100vh;
     height: 100svh;
-    height: -webkit-fill-available;
 }
 
 
