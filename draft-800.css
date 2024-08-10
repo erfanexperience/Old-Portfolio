@@ -50,7 +50,9 @@
         transform: none; 
     }
 
-
+    .hero-section:hover .gif-text {
+        color: white !important;
+      }
 
 
 
