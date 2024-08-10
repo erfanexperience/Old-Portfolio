@@ -79,7 +79,7 @@ p {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0;
 }
 
 .btn-primary {
