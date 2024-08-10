@@ -224,7 +224,8 @@ p {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0;
+    border: 1px solid red;
 }
 
 .hero-section-header, .hero-section-content, .hero-section-footer {
