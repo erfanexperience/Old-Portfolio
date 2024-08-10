@@ -157,9 +157,6 @@ p {
     transform: scale(1.2);
 }
 
-#hero-title {
-    padding-top: 2vh;
-}
 
 .hero-container {
     position: relative;
