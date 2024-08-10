@@ -6,6 +6,16 @@
     --pSize: 1.1rem;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
+.hero-section {
+    height: 100vh;
+    height: 100svh;
+    height: -webkit-fill-available;
+}
+
 
 
 .contact-section-title h2 {
@@ -17,9 +27,6 @@
     gap: 24vw;
 }
 
-.hero-section {
-    height: 90vh;
-}
 
 .hero-section-footer-socials{
     margin-bottom: 5vh;
