@@ -286,6 +286,7 @@ p {
 }
 
 .hero-section-content .row {
+    padding-top: 2vh;
     display: flex;
     flex-direction: column;
     gap: 0px;
