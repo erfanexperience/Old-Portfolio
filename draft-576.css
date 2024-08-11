@@ -10,8 +10,8 @@
 .hero-section {
     height: 100vh;
     height: 100svh;
+    border-radius: 32px;
 }
-
 
 
 .contact-section-title h2 {
