@@ -22,6 +22,7 @@
   --pFont: "brandon-grotesque", sans-serif;
   --pSize: 1.2em;
   --textcolor: white;
+  --headingcolor: rgb(25, 25, 25); 
   --primarycolor: #595992;
   cursor: url("Images/cursor.png") 16 16, auto;
     background-color: white;
@@ -54,6 +55,7 @@ h1 {
 h2 {
     font-family: var(--h2Font);
     font-size: var(--h2Size);
+    color: var(--headingcolor);
 }
 
 h3 {
@@ -64,6 +66,7 @@ h3 {
 h4 {
     font-family: var(--h4Font);
     font-size: var(--h4Size);
+    color: var(--headingcolor);
 }
 
 p {
