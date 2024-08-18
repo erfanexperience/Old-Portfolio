@@ -133,6 +133,18 @@ p {
     width: 85%;
 }
 
+.hero-section, 
+.container {
+    min-height: 700px;
+}
+.exploration-section {
+    min-height: 200px;
+}
+
+.ui-designs-container {
+    min-height: 300px;
+}
+
 
 
 
