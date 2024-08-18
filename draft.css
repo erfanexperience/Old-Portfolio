@@ -11,13 +11,13 @@
 
 
 :root {
-  --h1Font: "acier-bat-solid", sans-serif;
+  --h1Font: "Protest Strike", sans-serif;
   --h1Size: 6vw;
-  --h2Font: "acier-bat-solid", sans-serif;
+  --h2Font: "Protest Strike", sans-serif;
   --h2Size: 3.1rem;
   --h3Font: "brandon-grotesque", sans-serif;
   --h3Size: 1.2rem;
-  --h4Font: "acier-bat-solid", sans-serif;
+  --h4Font: "Protest Strike", sans-serif;
   --h4Size: 2.2rem;
   --pFont: "brandon-grotesque", sans-serif;
   --pSize: 1.2em;
@@ -50,12 +50,15 @@ body a, .btn-primary, .btn-secondry:hover {
 h1 {
     font-family: var(--h1Font);
     font-size: var(--h1Size);
+    font-weight: 500;
 }
 
 h2 {
     font-family: var(--h2Font);
     font-size: var(--h2Size);
     color: var(--headingcolor);
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 h3 {
@@ -67,6 +70,8 @@ h4 {
     font-family: var(--h4Font);
     font-size: var(--h4Size);
     color: var(--headingcolor);
+    letter-spacing: 1.5px;
+    font-weight: 300;
 }
 
 p {
