@@ -11,7 +11,7 @@
         <!--OG tags-->
         <meta property="og:title" content="Erfan Farahani - Portfolio">
         <meta property="og:description" content="About Me - Erfan Farahani">
-        <meta property="og:image" content="Images/Erfan-experience-og.png">
+        <meta property="og:image" content="https://drive.google.com/file/d/1udLmFnCx7xKhJ11FWEd9O3c3zJFBHu41/view?usp=drive_link">
         <meta property="og:url" content="https://erfanfarahani.com">
         <meta property="og:type" content="website">
 
@@ -23,13 +23,34 @@
         <link rel="stylesheet" href="draft-576.css" media="(max-width: 576px)">
         <link rel="stylesheet" href="https://use.typekit.net/oph5gup.css">
         <script src="https://kit.fontawesome.com/b5c3b41031.js" crossorigin="anonymous"></script>
-        <link rel="preload" href="Images/T2.webm" as="video">
         <link rel="preload" href="Images/cursor.png" as="image">
         <link rel="preload" href="Images/cursor2.png" as="image">
+        <link rel="preload" href="Images/t2.mp4" as="image">
+
+        <!-- test font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chewy&family=Protest+Strike&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
         <!--Title-->
         <title>About Me</title>
 
+        <script>
+            document.addEventListener('click', function(event) {
+                const navMenu = document.querySelector('.hero-section-header-nav');
+                const toggleBar = document.querySelector('.toogle-bar');
+                const checkbox = document.getElementById('toogle-bar');
+                
+                // Check if the clicked element is inside the nav menu or the toggle bar
+                const isClickInsideMenu = navMenu.contains(event.target);
+                const isClickOnToggleBar = toggleBar.contains(event.target);
+                
+                // If the click is outside the menu and toggle bar, uncheck the checkbox to close the menu
+                if (!isClickInsideMenu && !isClickOnToggleBar) {
+                    checkbox.checked = false;
+                }
+            });
+        </script>
 
         <!-- style -->
          <style>
@@ -52,7 +73,7 @@
                 margin-top: 4vh;
             }
 
-            .container {
+            .container-about {
             width: 80%;
             margin: auto;
             height: fit-content;
@@ -75,8 +96,8 @@
             position: relative;
             border-radius: 16px;
             width: 100%;
+            max-width: 1400px; 
             height: fit-content;
-            margin-bottom: 20px;
             overflow: visible;
             }
 
@@ -94,6 +115,7 @@
             left: 5%; 
             transform: translateX(-5%); 
             color: white; 
+            letter-spacing: 3px !important;
             padding: 10px 20px; 
             text-align: center; 
             }
@@ -178,7 +200,6 @@
             }
 
             .big-t {
-                line-height: 0%;
                 font-size: 2rem;
                 font-weight: bold;
             }
@@ -195,14 +216,23 @@
                 #about-title {
                     font-size: clamp(2rem, 5.9vw, 5.9vw)
                 }
+
+                .video-wrapper video {
+                    display: none;
+                }
+
+                #about-title {
+                    color: black;
+                    position: static;
+                }
+
             }
 
-             .hero-section-header {
-                padding-top: 28px;
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-             
+                .hero-section-header {
+                    padding-top: 28px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                } 
          </style>
 </head>
 
@@ -210,7 +240,7 @@
     <header class="hero-section-header">
         <div class="row">
             <div class="hero-section-header-logo">
-                <a href="https://www.erfanfarahani.com/"><img src="Images/55.png" alt="logo" id="header-logo-img"></a>
+                <a href="index.html"><img src="Images/55.png" alt="logo" id="header-logo-img"></a>
             </div>
             <nav class="hero-section-header-nav">
                 <input type="checkbox" id="toogle-bar">
@@ -219,18 +249,18 @@
                     <i class="fa-solid fa-xmark" id="xmark" style="color: #595992;"></i>
                 </label>
                 <div class="row" id="about-row">
-                    <a href="/about" class="row-active">About</a>
-                    <a href="/index#exploration-section-title">Designs</a>
-                    <a href="/contact">Contact</a>
+                    <a href="about.html" class="row-active">About</a>
+                    <a href="index.html#exploration-section-title">Designs</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </nav>
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container-about">
             <div class="video-wrapper">
                 <video autoplay loop muted playsinline>
-                    <source src="Images/T2.webm" type="video/mp4" style="max-width: 100%;">
+                    <source src="Images/t2.mp4" type="video/mp4">
                 </video>
                 <h1 class="gif-text video-text" id="about-title">Who I Am?</h1>
             </div>
@@ -325,24 +355,5 @@
             </div>
         </div>
     </main>
-
-    
-        <script>
-            document.addEventListener('click', function(event) {
-                const navMenu = document.querySelector('.hero-section-header-nav');
-                const toggleBar = document.querySelector('.toogle-bar');
-                const checkbox = document.getElementById('toogle-bar');
-                
-                // Check if the clicked element is inside the nav menu or the toggle bar
-                const isClickInsideMenu = navMenu.contains(event.target);
-                const isClickOnToggleBar = toggleBar.contains(event.target);
-                
-                // If the click is outside the menu and toggle bar, uncheck the checkbox to close the menu
-                if (!isClickInsideMenu && !isClickOnToggleBar) {
-                    checkbox.checked = false;
-                }
-            });
-        </script>
-    
     </body>
 </html>
