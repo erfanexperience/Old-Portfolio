@@ -475,6 +475,11 @@ p {
 }
 
 
+#section-twilight:hover #twilight-img,
+ {
+    transform: scale(1.05) rotate(-5deg);
+}
+
 #section-portfolio:hover #portfolio-img{
     transform: scale(1.05) rotate(5deg);
 }
