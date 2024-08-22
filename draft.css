@@ -477,19 +477,19 @@ p {
 
 #section-twilight:hover #twilight-img,
  {
-    transform: scale(1.05) rotate(-5deg);
+    transform: scale(1.05) rotate(5deg);
 }
 
 #section-portfolio:hover #portfolio-img{
-    transform: scale(1.05) rotate(5deg);
-}
-
-#section-gelato:hover #gelato-img {
     transform: scale(1.05) rotate(-5deg);
 }
 
-#section-flystein:hover #flystein-img{
+#section-gelato:hover #gelato-img {
     transform: scale(1.05) rotate(5deg);
+}
+
+#section-flystein:hover #flystein-img{
+    transform: scale(1.05) rotate(-5deg);
 }
 
 .btns {
