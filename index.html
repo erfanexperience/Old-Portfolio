@@ -48,6 +48,10 @@
 </head>
 
 <body>
+
+    <!-- loading page -->
+    <div id="pre-loader"></div>
+
     <!-- Section 1 Hero -->
     <section class="hero-section">
         <div class="hero-container">
@@ -506,22 +510,36 @@
         </div>
     </footer>
 
-<script>
-document.addEventListener('click', function(event) {
-    const navMenu = document.querySelector('.hero-section-header-nav');
-    const toggleBar = document.querySelector('.toogle-bar');
-    const checkbox = document.getElementById('toogle-bar');
+     <script>
+        document.addEventListener('click', function(event) {
+            const navMenu = document.querySelector('.hero-section-header-nav');
+            const toggleBar = document.querySelector('.toogle-bar');
+            const checkbox = document.getElementById('toogle-bar');
+            
+            // Check if the clicked element is inside the nav menu or the toggle bar
+            const isClickInsideMenu = navMenu.contains(event.target);
+            const isClickOnToggleBar = toggleBar.contains(event.target);
+            
+            // If the click is outside the menu and toggle bar, uncheck the checkbox to close the menu
+            if (!isClickInsideMenu && !isClickOnToggleBar) {
+                checkbox.checked = false;
+            }
+        });
+      </script>
+
+        
+     <script>
+        var loader = document.getElementById("pre-loader");
     
-    // Check if the clicked element is inside the nav menu or the toggle bar
-    const isClickInsideMenu = navMenu.contains(event.target);
-    const isClickOnToggleBar = toggleBar.contains(event.target);
+        window.addEventListener("load", function () {
+            loader.classList.add("fade-out");
     
-    // If the click is outside the menu and toggle bar, uncheck the checkbox to close the menu
-    if (!isClickInsideMenu && !isClickOnToggleBar) {
-        checkbox.checked = false;
-    }
-});
-</script>
+            // Wait for the transition to complete before removing the element
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 1000); // This should match the duration of your CSS transition
+        });
+      </script>
                 
 </body>
 </html>
