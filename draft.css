@@ -163,12 +163,6 @@ p {
     width: 100%;
     position: fixed;
     z-index: 100;
-    transition:  transform 1s ease-in-out; 
-    transform: translateY(0);
-}
-
-#pre-loader.fade-out {
-    transform: translateY(-100%);
 }
 
 
