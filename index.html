@@ -534,10 +534,8 @@
             var loader = document.getElementById("pre-loader");
             var heroSection = document.getElementById("hero-section");
     
-            // Check if the user has visited the site before
             var hasVisited = localStorage.getItem("hasVisited");
     
-            // Function to hide the pre-loader with a delay if it's the first visit
             function hideLoaderWithDelay() {
                 if (!hasVisited) {
                     setTimeout(function () {
@@ -549,7 +547,6 @@
                 }
             }
     
-            // Find all images inside the hero section
             var images = heroSection.querySelectorAll("img");
             var imagesLoaded = 0;
     
@@ -561,7 +558,6 @@
                 }
             }
     
-            // If there are no images, hide the loader with a delay immediately
             if (images.length === 0) {
                 hideLoaderWithDelay();
             } else {
