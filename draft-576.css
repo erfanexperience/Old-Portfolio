@@ -65,3 +65,7 @@
 #hero-title {
     padding-top: 0 !important;
 }
+
+.main-content-mobile-media img {
+    max-width: 120%;
+}
