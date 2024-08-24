@@ -534,21 +534,36 @@
             var loader = document.getElementById("pre-loader");
             var heroSection = document.getElementById("hero-section");
     
+            // Check if the user has visited the site before
+            var hasVisited = localStorage.getItem("hasVisited");
+    
+            // Function to hide the pre-loader with a delay if it's the first visit
+            function hideLoaderWithDelay() {
+                if (!hasVisited) {
+                    setTimeout(function () {
+                        loader.style.display = "none";
+                        localStorage.setItem("hasVisited", "true"); // Mark as visited
+                    }, 1500); // 1.5 seconds delay
+                } else {
+                    loader.style.display = "none"; // No delay on subsequent visits
+                }
+            }
+    
             // Find all images inside the hero section
             var images = heroSection.querySelectorAll("img");
             var imagesLoaded = 0;
     
-            // Function to hide the pre-loader once all images are loaded
+            // Function to check if all images are loaded
             function checkAllImagesLoaded() {
                 imagesLoaded++;
                 if (imagesLoaded === images.length) {
-                    loader.style.display = "none";
+                    hideLoaderWithDelay();
                 }
             }
     
-            // If there are no images, just hide the loader
+            // If there are no images, hide the loader with a delay immediately
             if (images.length === 0) {
-                loader.style.display = "none";
+                hideLoaderWithDelay();
             } else {
                 // Attach load event to each image
                 images.forEach(function (img) {
