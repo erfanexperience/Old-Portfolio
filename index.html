@@ -54,7 +54,7 @@
     <div id="pre-loader"></div>
 
     <!-- Section 1 Hero -->
-    <section class="hero-section">
+    <section class="hero-section" id="hero-section">
         <div class="hero-container">
             <img src="Images/hang-cloud1.png" alt="hang" id="hang1">
             <img src="Images/hang-cloud1.png" alt="hang2" id="hang2">
@@ -530,11 +530,37 @@
 
         
     <script>
-        var loader = document.getElementById ("pre-loader") ;
-
-        window.addEventListener("load", function () {
-        loader.style.display = "none"; 
-        })
+        document.addEventListener("DOMContentLoaded", function () {
+            var loader = document.getElementById("pre-loader");
+            var heroSection = document.getElementById("hero-section");
+    
+            // Find all images inside the hero section
+            var images = heroSection.querySelectorAll("img");
+            var imagesLoaded = 0;
+    
+            // Function to hide the pre-loader once all images are loaded
+            function checkAllImagesLoaded() {
+                imagesLoaded++;
+                if (imagesLoaded === images.length) {
+                    loader.style.display = "none";
+                }
+            }
+    
+            // If there are no images, just hide the loader
+            if (images.length === 0) {
+                loader.style.display = "none";
+            } else {
+                // Attach load event to each image
+                images.forEach(function (img) {
+                    if (img.complete) {
+                        checkAllImagesLoaded();
+                    } else {
+                        img.addEventListener("load", checkAllImagesLoaded);
+                        img.addEventListener("error", checkAllImagesLoaded); // In case an image fails to load
+                    }
+                });
+            }
+        });
     </script>
                 
 </body>
