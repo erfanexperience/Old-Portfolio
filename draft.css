@@ -439,7 +439,7 @@ p {
 .container {
     width: 80%;
     margin: auto;
-    /* border: 1px solid red; */
+    max-width: 1440px !important;
     height: 100vh;
 }
 
@@ -533,6 +533,7 @@ p {
 .ui-designs-container {
     position: relative;
     width: 70%; 
+    max-width: 1440px !important;
     height: 70vh; 
     margin: auto;
     overflow: visible; 
