@@ -665,6 +665,7 @@ p {
 .contact-section {
     display: flex;
     width: 70%;
+    max-width: 1440px !important;
     height: 40vh;
     align-items: center;
     justify-content: center;
