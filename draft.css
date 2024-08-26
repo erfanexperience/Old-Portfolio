@@ -270,6 +270,7 @@ p {
 }
 
 .hero-section-header {
+    max-width: 1440px;
     justify-self: flex-start;
 }
 
