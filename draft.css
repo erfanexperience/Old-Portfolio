@@ -658,6 +658,54 @@ p {
     left: 0;
 }
 
+/* Hover Effects */
+#ui-1:hover {
+    z-index: 100;
+}
+#ui-1:hover ~ #ui-2,
+#ui-1:hover ~ #ui-3,
+#ui-1:hover ~ #ui-4,
+#ui-1:hover + #ui-2,
+#ui-1:hover + #ui-3,
+#ui-1:hover + #ui-4 {
+    z-index: -100 !important;
+}
+
+#ui-2:hover {
+    z-index: 100;
+}
+#ui-2:hover ~ #ui-3,
+#ui-2:hover ~ #ui-4,
+#ui-2:hover ~ #ui-1,
+#ui-2:hover + #ui-1,
+#ui-2:hover + #ui-3,
+#ui-2:hover + #ui-4 {
+    z-index: -100 !important;
+}
+
+#ui-3:hover {
+    z-index: 100;
+}
+#ui-3:hover ~ #ui-4,
+#ui-3:hover ~ #ui-1,
+#ui-3:hover ~ #ui-2,
+#ui-3:hover + #ui-1,
+#ui-3:hover + #ui-2,
+#ui-3:hover + #ui-4 {
+    z-index: -100 !important;
+}
+
+#ui-4:hover {
+    z-index: 100;
+}
+#ui-4:hover ~ #ui-1,
+#ui-4:hover ~ #ui-2,
+#ui-4:hover ~ #ui-3,
+#ui-4:hover + #ui-1,
+#ui-4:hover + #ui-2,
+#ui-4:hover + #ui-3 {
+    z-index: -100 !important;
+}
 
 
 /* --------------- Contact Section */
