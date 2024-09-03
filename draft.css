@@ -25,7 +25,6 @@
   --headingcolor: rgb(25, 25, 25); 
   --primarycolor: #595992;
   cursor: url("Images/cursor.png") 16 16, auto;
-    background-color: white;
 }
 
 body {
@@ -34,6 +33,7 @@ body {
     cursor: url("Images/cursor.png") 16 16, auto;
     transition: cursor 0.3s ease-in-out; 
     overflow-x: hidden;
+    background-color: white;
 }
 
 body a, .btn-primary, .btn-secondry {
@@ -409,7 +409,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     background-image: url(Images/heading-cover-left-2.png), url(Images/heading-cover-right-2.png);
     background-size: 80vw auto, 80vw auto;
     background-repeat: no-repeat;
